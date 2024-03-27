@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", system-ui;
+  transition: 0.1s;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: rgba(0, 0, 0, 0.01);
+}
+
+.wrapper {
+  width: 350px;
+  height: 275px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px 15px rgba(0, 0, 0, 0.05);
+}
+
+.wrapper.uploaded {
+  height: 450px;
+}
+
+.wrapper h1 {
+  text-align: center;
+  padding: 5px 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.wrapper .upload {
+  display: grid;
+  place-items: center;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+}
+
+.wrapper.uploaded .upload {
+  display: none;
+}
+
+.upload svg {
+  width: 150px;
+  height: 150px;
+}
+
+.upload p {
+  font-size: large;
+  font-weight: 400;
+}
+
+.wrapper .uploaded {
+  display: none;
+}
+
+.wrapper.uploaded .uploaded {
+  display: grid;
+  place-items: center;
+  padding: 10px;
+}
+
+.uploaded textarea {
+  resize: none;
+  width: 95%;
+  height: 100px;
+  margin: 10px 0;
+  padding: 5px 7px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+  border-color: rgb(0, 0, 255);
+  border-radius: 7px;
+}
+
+.uploaded textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.uploaded .buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttons button {
+  width: 150px;
+  border: none;
+  padding: 10px 0;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.buttons button:hover {
+  scale: 1.02;
+}
+
+.buttons .copy {
+  color: #fff;
+  background: rgb(0, 0, 255);
+}
+
+.buttons .clear {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
